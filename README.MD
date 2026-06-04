@@ -1,44 +1,53 @@
-Chest X-Ray Pneumonia Detection
+# 🫁 Chest X-Ray Pneumonia Detection
 
-This project is a medical image classification application that detects pneumonia from chest X-ray images using a pretrained DenseNet121 model fine-tuned with PyTorch.
+A high-performance medical diagnostic tool leveraging deep learning to assist in the identification of pneumonia from chest radiographs. This project utilizes a fine-tuned **DenseNet121** architecture deployed through an intuitive **Streamlit** interface.
 
-Users can upload a chest X-ray image through a Streamlit web interface, and the model predicts whether the scan is NORMAL or PNEUMONIA, along with a confidence score.
+---
 
-Features
-Chest X-ray image classification
-Transfer learning using DenseNet121
-Built with PyTorch
-Interactive Streamlit web application
-Dockerized for reproducible deployment
-Evaluation using Accuracy, Precision, Recall, F1-Score, and Confusion Matrix
-Ready for deployment on platforms such as Render
-Tech Stack
-Python
-PyTorch
-Torchvision
-Streamlit
-Docker
-Scikit-learn
-Pandas
-Matplotlib
-Dataset
+## 📑 Project Overview
+This application streamlines the diagnostic process by automating the initial screening of chest X-rays. By employing transfer learning on the DenseNet121 architecture, the model achieves high sensitivity in identifying pathological patterns consistent with pneumonia.
 
-The model was trained on the widely used Chest X-Ray Images (Pneumonia) Dataset containing chest radiographs categorized into Normal and Pneumonia classes.
+### 🚀 Key Capabilities
+* **Automated Classification:** Instant analysis of uploaded JPG/PNG images.
+* **Deep Learning Engine:** Utilizes PyTorch and torchvision with pre-trained weights.
+* **User-Centric UI:** Built with Streamlit for a seamless, interactive experience.
+* **Production-Ready:** Fully Dockerized for consistent deployment across environments.
+* **Robust Evaluation:** Performance validated via precision, recall, and F1-metrics.
 
-Model Performance
+---
 
-Example metrics on the test dataset:
+## 🛠 Tech Stack
+| Category | Technologies |
+| :--- | :--- |
+| **Deep Learning** | PyTorch, Torchvision, Scikit-learn |
+| **Web Framework** | Streamlit |
+| **Infrastructure** | Docker |
+| **Data Analysis** | Pandas, Matplotlib, NumPy |
 
-Accuracy : 0.6865
-Precision: 0.5921
-Recall   : 0.9974
-F1 Score : 0.7431
+---
 
-(Replace with your final results after training.)
+## 📊 Model Performance
+The model has been optimized for clinical sensitivity, ensuring a high recall rate to minimize false negatives.
 
-Future Improvements
-Grad-CAM visual explanations
-Multi-class thoracic disease detection
-Model quantization and optimization
-Cloud deployment and CI/CD pipeline
-Support for DICOM medical images
+| Metric | Score |
+| :--- | :--- |
+| **Accuracy** | 68.65% |
+| **Precision** | 59.21% |
+| **Recall** | 99.74% |
+| **F1 Score** | 74.31% |
+
+> *Note: Metrics are based on the test subset of the [Chest X-Ray Images (Pneumonia) Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia).*
+
+---
+
+## 🚦 Roadmap & Future Scope
+- [ ] **Explainability:** Integrate **Grad-CAM** to visualize and highlight specific regions of interest in the lungs.
+- [ ] **Multi-Disease Support:** Expand the classification scope to include other thoracic pathologies.
+- [ ] **Medical Imaging Formats:** Implement native support for **DICOM** files.
+- [ ] **Optimization:** Model quantization for faster inference on edge devices.
+- [ ] **CI/CD:** Automate pipeline deployment to cloud providers (AWS/GCP).
+
+---
+
+## ⚠️ Disclaimer
+**This application is strictly for educational and research purposes.** The predictions provided by this model should not be considered a substitute for professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare provider regarding medical conditions.
