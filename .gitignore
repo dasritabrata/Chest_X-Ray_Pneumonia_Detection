@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python Build Files
+build/
+dist/
+*.egg-info/
+
+# PyTorch Checkpoints
+*.pt
+*.pth
+
+# Dataset
+chestxray/
+data/
+dataset/
+datasets/
+
+# Kaggle Downloads
+*.zip
+
+# Streamlit Cache
+.streamlit/cache/
+
+# Environment Variables
+.env
+
+# Docker
+docker-compose.override.yml
+
+# Coverage
+.coverage
+htmlcov/
+
+# Temporary Files
+*.tmp
+*.temp
